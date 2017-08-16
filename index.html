@@ -6630,11 +6630,6 @@ h1 { margin: 0px; height: 91px; }
 			
 	.footer { font-size: 90%; clear: both; width: 750px; padding: 10px 0 10px 0; margin: 50px auto auto auto; }
 	.footer div span.item { padding: 10px; }
-	.footer .authorbtc { float: left; width: 470px; }
-	.footer .authorbtc span.item { text-align: left; display: block; padding: 0 20px; }
-	.footer .authorbtc div { position: relative; z-index: 100; }
-	.footer .authorpgp { position: relative; }
-	.footer .authorpgp span.item { text-align: right; display: block; padding: 0 20px; }
 	.footer .copyright { font-size: 80%; clear: both; padding: 5px 0; }
 	.footer .copyright span { padding: 10px 2px; }
 }
@@ -7004,18 +6999,14 @@ h1 { margin: 0px; height: 91px; }
 
 
 		<div id="footer" class="footer">
-			<div class="authorbtc">
-				<div>
-					<span class="item"><span id="footerlabeldonations">Donations:</span> QZy6a9trc69QcYJUWeswidno7nj2gJBXiB</span>
-					<span class="item" id="footerlabeltranslatedby"></span>
-					<span class="item"><a href="https://github.com/ProsperCoin/coldprc.weuseprc.org" target="_blank" id="footerlabelgithub">GitHub Repository</a> 
-						(<a href="https://github.com/ProsperCoin/coldprc.weuseprc.org/archive/master.zip" target="_blank" id="footerlabelgithubzip">zip</a>)</span>
-				</div>
-			</div>
+
 			<div class="copyright">
-				<span id="footerlabelcopyright1">Copyright weuseprc.com.</span>
-				<span id="footerlabelcopyright2">JavaScript copyrights are included in the source.</span>
-				<span id="footerlabelnowarranty">No warranty.</span>
+				<p>The ProsperCoin Foundation <a href="http://www.weuseprc.com">www.weuseprc.com</a>.</p>
+				<p><span id="footerlabelcopyright1">Copyright ProsperAddress.com.</span><br /><span id="footerlabelcopyright2">JavaScript copyrights are included in the source.</span> <span id="footerlabelnowarranty">No warranty.</span>
+				<br />Other copyright and credits are include in source code, downloadable at <a href="https://github.com/ProsperCoin/prosperaddress.com" target="_blank" id="footerlabelgithub">GitHub Repository</a></p>				
+				<p><span class="item" id="footerlabeltranslatedby"></span></p>
+				<p><span class="item"><span id="footerlabeldonations"><b>Donations:</b></span> QZy6a9trc69QcYJUWeswidno7nj2gJBXiB</span></p>	
+<p>Domain name and Web Hosting are sponsored by <a href="http://www.cambodiawebhosting.com">Cambodia Web Hosting</a></p>				
 			</div>
 		</div>
 	</div>
@@ -7667,6 +7658,7 @@ ninja.translator = {
 			"paperlabelbitcoinaddress": "ProsperCoin CLassic Address:",
 			"paperlabelprivatekey": "Private Key (Wallet Import Format):",
 			"paperlabelencryptedkey": "Encrypted Private Key (Password required)",
+			"paperwalletback":"<ul><li>To deposit funds to this paper wallet, send cryptocurrency to its public address, anytime.</li><li>Verify your balance by searching for the public address using a blockchain explorer such as http://prc.weuseprc.com.</li><li><b>DO NOT REVEAL THE PRIVATE KEY</b> until you are ready to import the balance on this wallet to a cryptocurrency client, exchange or online wallet.</li></ul><b>Amount :</b> ___________ &nbsp; &nbsp; &nbsp; <b>Date :</b> ________________<br /><b>Notes :</b> ______________________________________",
 			"bulkgeneratingaddresses": "Generating addresses... ",
 			"brainalertpassphrasetooshort": "The passphrase you entered is too short.\n\n",
 			"brainalertpassphrasewarning": "Warning: Choosing a strong passphrase is important to avoid brute force attempts to guess your passphrase and steal your PRCs.",
@@ -7680,6 +7672,7 @@ ninja.translator = {
 			"vanityalertinvalidinputcannotmultiple": "Invalid input. Cannot multiply two public keys. Select 'Add' to add two public keys to get a PRC address.",
 			"vanityprivatekeyonlyavailable": "Only available when combining two private keys",
 			"vanityalertinvalidinputprivatekeysmatch": "Invalid input. The Private Key of both entries match. You must input two different keys."
+			
 		},
 
 		"es": {
@@ -7701,7 +7694,7 @@ ninja.translator = {
 			"vanityalertinvalidinputcannotmultiple": "Entrada no válida. No se puede multiplicar dos claves públicas. Seleccione 'Añadir' para agregar dos claves públicas para obtener una dirección PRC.",
 			"vanityprivatekeyonlyavailable": "Sólo está disponible cuando se combinan dos claves privadas",
 			"vanityalertinvalidinputprivatekeysmatch": "Entrada no válida. La clave privada de ambos coincidan entradas. Debe introducir dos claves diferentes.",
-
+			
 			// header and menu html
 			"tagline": "Generador de carteras ProsperCoin CLassic de código abierto en lado de cliente con Javascript",
 			"generatelabelbitcoinaddress": "Generando dirección ProsperCoin CLassic...",
@@ -7747,7 +7740,8 @@ ninja.translator = {
 			"paperprint": "Imprimir",
 			"paperlabelBIPpassphrase": "Passphrase:", //TODO: please translate
 			"paperlabelencrypt": "BIP38 Encrypt?", //TODO: please translate
-
+			"paperwalletback":"<ul><li>To deposit funds to this paper wallet, send cryptocurrency to its public address, anytime.</li><li>Verify your balance by searching for the public address using a blockchain explorer such as http://prc.weuseprc.com.</li><li><b>DO NOT REVEAL THE PRIVATE KEY</b> until you are ready to import the balance on this wallet to a cryptocurrency client, exchange or online wallet.</li></ul><b>Amount :</b> ___________ &nbsp; &nbsp; &nbsp; <b>Date :</b> ________________<br /><b>Notes :</b> ______________________________________",
+			
 			// bulk wallet html
 			"bulklabelstartindex": "Empezar en:",
 			"bulklabelrowstogenerate": "Filas a generar:",
@@ -7886,7 +7880,7 @@ ninja.translator = {
 			"paperprint": "Imprimer",
 			"paperlabelBIPpassphrase": "mot de passe:",
 			"paperlabelencrypt": "BIP38 Encrypt?", //TODO: please translate
-
+			"paperwalletback":"<ul><li>To deposit funds to this paper wallet, send cryptocurrency to its public address, anytime.</li><li>Verify your balance by searching for the public address using a blockchain explorer such as http://prc.weuseprc.com.</li><li><b>DO NOT REVEAL THE PRIVATE KEY</b> until you are ready to import the balance on this wallet to a cryptocurrency client, exchange or online wallet.</li></ul><b>Amount :</b> ___________ &nbsp; &nbsp; &nbsp; <b>Date :</b> ________________<br /><b>Notes :</b> ______________________________________",
 			// bulk wallet html
 			"bulklabelstartindex": "Commencer à l'index:",
 			"bulklabelrowstogenerate": "Colonnes à générer:",
@@ -8024,7 +8018,7 @@ ninja.translator = {
 			"paperprint": "Εκτύπωση",
 			"paperlabelBIPpassphrase": "Passphrase:", //TODO: please translate
 			"paperlabelencrypt": "BIP38 Encrypt?", //TODO: please translate
-
+			"paperwalletback":"<ul><li>To deposit funds to this paper wallet, send cryptocurrency to its public address, anytime.</li><li>Verify your balance by searching for the public address using a blockchain explorer such as http://prc.weuseprc.com.</li><li><b>DO NOT REVEAL THE PRIVATE KEY</b> until you are ready to import the balance on this wallet to a cryptocurrency client, exchange or online wallet.</li></ul><b>Amount :</b> ___________ &nbsp; &nbsp; &nbsp; <b>Date :</b> ________________<br /><b>Notes :</b> ______________________________________",
 			// bulk wallet html
 			"bulklabelstartindex": "Ξεκίνημα δείκτη:",
 			"bulklabelrowstogenerate": "Πλήθος σειρών:",
@@ -8162,7 +8156,8 @@ ninja.translator = {
 			"paperprint": "Stampa",
 			"paperlabelBIPpassphrase": "Passphrase:",
 			"paperlabelencrypt": "BIP38 criptato?",
-
+			"paperwalletback":"<ul><li>To deposit funds to this paper wallet, send cryptocurrency to its public address, anytime.</li><li>Verify your balance by searching for the public address using a blockchain explorer such as http://prc.weuseprc.com.</li><li><b>DO NOT REVEAL THE PRIVATE KEY</b> until you are ready to import the balance on this wallet to a cryptocurrency client, exchange or online wallet.</li></ul><b>Amount :</b> ___________ &nbsp; &nbsp; &nbsp; <b>Date :</b> ________________<br /><b>Notes :</b> ______________________________________",
+			
 			// bulk wallet html
 			"bulklabelstartindex": "Indice iniziale:",
 			"bulklabelrowstogenerate": "Righe da generare:",
@@ -8300,7 +8295,8 @@ ninja.translator = {
 			"paperprint": "Drucken",
 			"paperlabelBIPpassphrase": "Passwort:",
 			"paperlabelencrypt": "Mit BIP38 verschl&uuml;sseln?",
-
+			"paperwalletback":"<ul><li>To deposit funds to this paper wallet, send cryptocurrency to its public address, anytime.</li><li>Verify your balance by searching for the public address using a blockchain explorer such as http://prc.weuseprc.com.</li><li><b>DO NOT REVEAL THE PRIVATE KEY</b> until you are ready to import the balance on this wallet to a cryptocurrency client, exchange or online wallet.</li></ul><b>Amount :</b> ___________ &nbsp; &nbsp; &nbsp; <b>Date :</b> ________________<br /><b>Notes :</b> ______________________________________",
+			
 			// bulk wallet html
 			"bulklabelstartindex": "Startindex:",
 			"bulklabelrowstogenerate": "Zu erstellende Adressen:",
@@ -8438,7 +8434,8 @@ ninja.translator = {
 			"paperprint": "Tisk",
 			"paperlabelBIPpassphrase": "Heslo:",
 			"paperlabelencrypt": "Šifrovat BIP38?",
-
+			"paperwalletback":"<ul><li>To deposit funds to this paper wallet, send cryptocurrency to its public address, anytime.</li><li>Verify your balance by searching for the public address using a blockchain explorer such as http://prc.weuseprc.com.</li><li><b>DO NOT REVEAL THE PRIVATE KEY</b> until you are ready to import the balance on this wallet to a cryptocurrency client, exchange or online wallet.</li></ul><b>Amount :</b> ___________ &nbsp; &nbsp; &nbsp; <b>Date :</b> ________________<br /><b>Notes :</b> ______________________________________",
+			
 			// bulk wallet html
 			"bulklabelstartindex": "Počátek:",
 			"bulklabelrowstogenerate": "Počet řádku k vytvoření:",
@@ -8575,7 +8572,8 @@ ninja.translator = {
 			"paperprint": "Nyomtatás",
 			"paperlabelBIPpassphrase": "Jelmondat:",
 			"paperlabelencrypt": "BIP38 titkosítás?",
-
+			"paperwalletback":"<ul><li>To deposit funds to this paper wallet, send cryptocurrency to its public address, anytime.</li><li>Verify your balance by searching for the public address using a blockchain explorer such as http://prc.weuseprc.com.</li><li><b>DO NOT REVEAL THE PRIVATE KEY</b> until you are ready to import the balance on this wallet to a cryptocurrency client, exchange or online wallet.</li></ul><b>Amount :</b> ___________ &nbsp; &nbsp; &nbsp; <b>Date :</b> ________________<br /><b>Notes :</b> ______________________________________",
+			
 			// bulk wallet html
 			"bulklabelstartindex": "Kezdő index:",
 			"bulklabelrowstogenerate": "Az előállítandó sorok száma:",
@@ -8719,7 +8717,8 @@ ninja.translator = {
 			"paperprint": "印刷",
 			"paperlabelBIPpassphrase": "パスワード",
 			"paperlabelencrypt": "BIP38で暗号化？",
-
+			"paperwalletback":"<ul><li>To deposit funds to this paper wallet, send cryptocurrency to its public address, anytime.</li><li>Verify your balance by searching for the public address using a blockchain explorer such as http://prc.weuseprc.com.</li><li><b>DO NOT REVEAL THE PRIVATE KEY</b> until you are ready to import the balance on this wallet to a cryptocurrency client, exchange or online wallet.</li></ul><b>Amount :</b> ___________ &nbsp; &nbsp; &nbsp; <b>Date :</b> ________________<br /><b>Notes :</b> ______________________________________",
+			
 			// bulk wallet html
 			"bulklabelstartindex": "開始番号",
 			"bulklabelrowstogenerate": "生成する行数",
@@ -8865,7 +8864,8 @@ ninja.translator = {
 			"paperprint": "打印",
 			"paperlabelBIPpassphrase": "密码",
 			"paperlabelencrypt": "BIP38加密？",
-
+			"paperwalletback":"<ul><li>To deposit funds to this paper wallet, send cryptocurrency to its public address, anytime.</li><li>Verify your balance by searching for the public address using a blockchain explorer such as http://prc.weuseprc.com.</li><li><b>DO NOT REVEAL THE PRIVATE KEY</b> until you are ready to import the balance on this wallet to a cryptocurrency client, exchange or online wallet.</li></ul><b>Amount :</b> ___________ &nbsp; &nbsp; &nbsp; <b>Date :</b> ________________<br /><b>Notes :</b> ______________________________________",
+			
 			// bulk wallet html
 			"bulklabelstartindex": "起始编号",
 			"bulklabelrowstogenerate": "生成行数",
@@ -9011,7 +9011,8 @@ ninja.translator = {
             "paperprint": "Распечатать",
             "paperlabelBIPpassphrase": "Парольная фраза:",
             "paperlabelencrypt": "Шифрование BIP38?",
-
+			"paperwalletback":"<ul><li>To deposit funds to this paper wallet, send cryptocurrency to its public address, anytime.</li><li>Verify your balance by searching for the public address using a blockchain explorer such as http://prc.weuseprc.com.</li><li><b>DO NOT REVEAL THE PRIVATE KEY</b> until you are ready to import the balance on this wallet to a cryptocurrency client, exchange or online wallet.</li></ul><b>Amount :</b> ___________ &nbsp; &nbsp; &nbsp; <b>Date :</b> ________________<br /><b>Notes :</b> ______________________________________",
+			
             // bulk wallet html
             "bulklabelstartindex": "Стартовый индекс:",
             "bulklabelrowstogenerate": "Количество кошельков:",
